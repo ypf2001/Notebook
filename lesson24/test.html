@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0;}
+.div-class{
+display: block;
+width: 100%;
+height: 300px;
+
+}
+ul{
+    
+
+    list-style: none;
+
+    height: 100px;
+
+}
+ul li{
+    width: 100px;
+    height: 80px;
+    display: inline-block;
+border: darkturquoise 1px solid;
+
+}
+ul li a{
+color: darkblue;
+        text-decoration: none;
+}
+.active{
+background-color: floralwhite;
+}
+
+.container{
+
+    
+}
+header {}
+</style>
+<body>
+    <header>
+        <nav style="position: fixed;">
+        <ul style="">
+            <li class="nav-spy active" ><a href="#div1"> 菜单1</a></li>
+            <li class="nav-spy"><a href="#div2"> 菜单2</a></li>
+            <li class="nav-spy"><a href="#div3"> 菜单3</a></li>
+            <li class="nav-spy"><a href="#div4"> 菜单4</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="container" style="height: 2000px;" >
+        <div class="div-class" id="div1"></div>
+        <div class="div-class" id="div2"></div>
+        <div class="div-class" id="div3"></div>
+        <div class="div-class" id="div4"></div>
+
+    </div>
+
+
+    
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+"</script>
+<script>
+$(".div-class:odd").css("background-color","#DCB5FF")
+$(".div-class:even").css("background-color","#FFC1E0")
+var div1_pos = document.querySelector("#div1").offsetTop;
+
+$(window).scroll(
+
+   function(){
+          console.log( $(".div-class").eq(0).offset().top)
+          console.log( document.getElementById("div1").clientTop)
+   }
+ 
+
+// $(".nav-spy").each(
+// function(){
+
+
+// }
+
+// )
+
+)
+</script>
+</html>

@@ -1,0 +1,5 @@
+Staticfile CDN（国内） : https://cdn.staticfile.org/vue/2.2.2/vue.min.js
+
+unpkg：https://unpkg.com/vue/dist/vue.js, 会保持和 npm 发布的最新的版本一致。
+
+cdnjs : https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js

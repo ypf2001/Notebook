@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        *{
+
+            margin: 0;
+        }
+        ul {
+           
+
+            list-style: none;
+
+        }
+        ul li {
+     
+
+            display: inline-block;
+
+        }
+        ul li a {
+            text-decoration: none;
+        }
+    </style>
+<body  data-spy="scroll" data-target="#navbar-example" data-offset="0" >
+
+<div class=" navbar navbar-default navbar-fixed-top" id="navbar-example">
+    <ul class="nav navbar-nav">
+<li><a href="#div1">链接1</a></li>
+<li ><a href="#div2">链接2</a></li>
+<li ><a href="#div3">链接3</a></li>
+<li ><a href="#div4">链接4</a></li>
+    </ul>
+</div>
+<div style="height: 2000px;">
+    <div class="div-class" id="div1" style="width: 200px; height: 200px;"></div>
+    <div class="div-class"  id="div2" style="width: 200px; height: 200px;"></div>
+    <div  class="div-class" id="div3" style="width: 200px; height: 200px;"></div>
+    <div  class="div-class" id="div4" style="width: 200px; height: 200px;"></div>
+</div>
+
+</body>
+<script>
+    $(".div-class:odd").css("background-color","#DCB5FF")
+    $(".div-class:even").css("background-color","#FFC1E0")
+</script>
+</html>
